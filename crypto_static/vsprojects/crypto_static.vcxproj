@@ -894,6 +894,9 @@
       <OptimizeReferences>true</OptimizeReferences>
       <GenerateDebugInformation>true</GenerateDebugInformation>
     </Link>
+    <MASM>
+      <ObjectFileName>$(SolutionDir)Bin\$(Configuration)\$(PlatformShortName)\%(FileName).obj</ObjectFileName>
+    </MASM>
   </ItemDefinitionGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
