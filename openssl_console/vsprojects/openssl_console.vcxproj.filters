@@ -1,0 +1,178 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="源文件">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="头文件">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="资源文件">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="源文件\apps">
+      <UniqueIdentifier>{ad4c89ef-b977-49de-a152-0c01eae8f327}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\ms">
+      <UniqueIdentifier>{01e91c14-5df4-4850-9690-08c941dada44}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\Source\apps\srp.c">
+      <Filter>源文件\apps</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\apps\storeutl.c">
+      <Filter>源文件\apps</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\apps\ts.c">
+      <Filter>源文件\apps</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\apps\verify.c">
+      <Filter>源文件\apps</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\apps\version.c">
+      <Filter>源文件\apps</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\apps\x509.c">
+      <Filter>源文件\apps</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\apps\asn1pars.c">
+      <Filter>源文件\apps</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\apps\ca.c">
+      <Filter>源文件\apps</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\apps\ciphers.c">
+      <Filter>源文件\apps</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\apps\cms.c">
+      <Filter>源文件\apps</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\apps\crl.c">
+      <Filter>源文件\apps</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\apps\crl2p7.c">
+      <Filter>源文件\apps</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\apps\dgst.c">
+      <Filter>源文件\apps</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\apps\dhparam.c">
+      <Filter>源文件\apps</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\apps\dsa.c">
+      <Filter>源文件\apps</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\apps\dsaparam.c">
+      <Filter>源文件\apps</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\apps\ec.c">
+      <Filter>源文件\apps</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\apps\ecparam.c">
+      <Filter>源文件\apps</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\apps\enc.c">
+      <Filter>源文件\apps</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\apps\engine.c">
+      <Filter>源文件\apps</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\apps\errstr.c">
+      <Filter>源文件\apps</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\apps\gendsa.c">
+      <Filter>源文件\apps</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\apps\genpkey.c">
+      <Filter>源文件\apps</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\apps\genrsa.c">
+      <Filter>源文件\apps</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\apps\nseq.c">
+      <Filter>源文件\apps</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\apps\ocsp.c">
+      <Filter>源文件\apps</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\apps\openssl.c">
+      <Filter>源文件\apps</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\apps\opt.c">
+      <Filter>源文件\apps</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\apps\passwd.c">
+      <Filter>源文件\apps</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\apps\pkcs7.c">
+      <Filter>源文件\apps</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\apps\pkcs8.c">
+      <Filter>源文件\apps</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\apps\pkcs12.c">
+      <Filter>源文件\apps</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\apps\pkey.c">
+      <Filter>源文件\apps</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\apps\pkeyparam.c">
+      <Filter>源文件\apps</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\apps\pkeyutl.c">
+      <Filter>源文件\apps</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\apps\prime.c">
+      <Filter>源文件\apps</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\apps\rand.c">
+      <Filter>源文件\apps</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\apps\rehash.c">
+      <Filter>源文件\apps</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\apps\req.c">
+      <Filter>源文件\apps</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\apps\rsa.c">
+      <Filter>源文件\apps</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\apps\rsautl.c">
+      <Filter>源文件\apps</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\apps\s_cb.c">
+      <Filter>源文件\apps</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\apps\s_client.c">
+      <Filter>源文件\apps</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\apps\s_server.c">
+      <Filter>源文件\apps</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\apps\s_socket.c">
+      <Filter>源文件\apps</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\apps\s_time.c">
+      <Filter>源文件\apps</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\apps\sess_id.c">
+      <Filter>源文件\apps</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\apps\smime.c">
+      <Filter>源文件\apps</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\apps\speed.c">
+      <Filter>源文件\apps</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\apps\spkac.c">
+      <Filter>源文件\apps</Filter>
+    </ClCompile>
+    <ClCompile Include="..\main.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>
