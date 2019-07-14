@@ -149,7 +149,7 @@
       <WarningLevel>Level3</WarningLevel>
       <Optimization>MaxSpeed</Optimization>
       <FunctionLevelLinking>true</FunctionLevelLinking>
-      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <IntrinsicFunctions>false</IntrinsicFunctions>
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;_USRDLL;WIN32_LEAN_AND_MEAN;OPENSSL_SYS_WIN32;OPENSSL_USE_APPLINK;OPENSSL_PIC;OPENSSL_THREADS;OPENSSL_NO_STATIC_ENGINE;OPENSSLDIR=".\\Openssl\\";ENGINESDIR=".\\Openssl\\Engines\\";_CRT_SECURE_NO_DEPRECATE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
@@ -159,6 +159,11 @@
       <AdditionalIncludeDirectories>..\..\Source\;..\..\Source\include\;..\..\Source\crypto\ec\curve448\;..\..\Source\crypto\ec\curve448\arch_32\;..\..\Source\crypto\include\;..\..\Source\crypto\modes\;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <MultiProcessorCompilation>true</MultiProcessorCompilation>
       <DisableSpecificWarnings>4090;4244;4996</DisableSpecificWarnings>
+      <WholeProgramOptimization>true</WholeProgramOptimization>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <OmitFramePointers>
+      </OmitFramePointers>
+      <FavorSizeOrSpeed>Size</FavorSizeOrSpeed>
     </ClCompile>
     <Link>
       <SubSystem>Windows</SubSystem>
@@ -179,7 +184,7 @@
       <WarningLevel>Level3</WarningLevel>
       <Optimization>MaxSpeed</Optimization>
       <FunctionLevelLinking>true</FunctionLevelLinking>
-      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <IntrinsicFunctions>false</IntrinsicFunctions>
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>WIN64;NDEBUG;_WINDOWS;_USRDLL;WIN32_LEAN_AND_MEAN;OPENSSL_SYS_WIN64;OPENSSL_USE_APPLINK;OPENSSL_PIC;OPENSSL_THREADS;OPENSSL_NO_STATIC_ENGINE;OPENSSLDIR=".\\Openssl\\";ENGINESDIR=".\\Openssl\\Engines\\";_CRT_SECURE_NO_DEPRECATE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
@@ -189,6 +194,8 @@
       <AdditionalIncludeDirectories>..\..\Source\;..\..\Source\include\;..\..\Source\crypto\ec\curve448\;..\..\Source\crypto\ec\curve448\arch_32\;..\..\Source\crypto\include\;..\..\Source\crypto\modes\;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <MultiProcessorCompilation>true</MultiProcessorCompilation>
       <DisableSpecificWarnings>4090;4244;4996</DisableSpecificWarnings>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <FavorSizeOrSpeed>Size</FavorSizeOrSpeed>
     </ClCompile>
     <Link>
       <SubSystem>Windows</SubSystem>

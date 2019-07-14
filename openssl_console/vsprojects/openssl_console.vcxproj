@@ -77,6 +77,8 @@
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <LinkIncremental>true</LinkIncremental>
+    <OutDir>$(SolutionDir)Bin\$(Configuration)\$(PlatformShortName)\</OutDir>
+    <IntDir>$(SolutionDir)Bin\$(Configuration)\$(PlatformShortName)\Obj\$(ProjectName)\</IntDir>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <LinkIncremental>false</LinkIncremental>
@@ -85,6 +87,8 @@
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <LinkIncremental>false</LinkIncremental>
+    <IntDir>$(SolutionDir)Bin\$(Configuration)\$(PlatformShortName)\Obj\$(ProjectName)\</IntDir>
+    <OutDir>$(SolutionDir)Bin\$(Configuration)\$(PlatformShortName)\</OutDir>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>
@@ -117,6 +121,7 @@
       <AdditionalIncludeDirectories>..\..\Source\;..\..\Source\include;..\..\Source\crypto\ec\curve448\;..\..\Source\crypto\ec\curve448\arch_32;..\..\Source\crypto\include\;..\..\Source\crypto\modes\;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <MultiProcessorCompilation>true</MultiProcessorCompilation>
       <DisableSpecificWarnings>4090;4244;4996</DisableSpecificWarnings>
+      <LanguageStandard>stdcpp17</LanguageStandard>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -190,7 +195,7 @@
     <ClCompile Include="..\..\Source\apps\genrsa.c" />
     <ClCompile Include="..\..\Source\apps\nseq.c" />
     <ClCompile Include="..\..\Source\apps\ocsp.c" />
-    <ClCompile Include="..\..\Source\apps\openssl.c" />
+    <ClCompile Include="..\..\Source\apps\main.c" />
     <ClCompile Include="..\..\Source\apps\opt.c" />
     <ClCompile Include="..\..\Source\apps\passwd.c" />
     <ClCompile Include="..\..\Source\apps\pkcs12.c" />
@@ -220,7 +225,7 @@
     <ClCompile Include="..\..\Source\apps\verify.c" />
     <ClCompile Include="..\..\Source\apps\version.c" />
     <ClCompile Include="..\..\Source\apps\x509.c" />
-    <ClCompile Include="..\main.cpp" />
+    <ClCompile Include="..\port.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\..\Apps\vsprojects\Apps.vcxproj">
@@ -228,6 +233,7 @@
     </ProjectReference>
     <ProjectReference Include="..\..\crypto\vsprojects\crypto.vcxproj">
       <Project>{211bde66-7beb-4432-a1fb-7e8432ae0de9}</Project>
+      <UseLibraryDependencyInputs>true</UseLibraryDependencyInputs>
     </ProjectReference>
     <ProjectReference Include="..\..\openssl\vsprojects\openssl.vcxproj">
       <Project>{c1af18cb-84b5-487e-b4cc-b47799ca45bb}</Project>

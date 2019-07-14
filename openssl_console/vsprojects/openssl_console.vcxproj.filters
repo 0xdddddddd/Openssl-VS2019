@@ -99,9 +99,6 @@
     <ClCompile Include="..\..\Source\apps\ocsp.c">
       <Filter>源文件\apps</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\Source\apps\openssl.c">
-      <Filter>源文件\apps</Filter>
-    </ClCompile>
     <ClCompile Include="..\..\Source\apps\opt.c">
       <Filter>源文件\apps</Filter>
     </ClCompile>
@@ -171,7 +168,10 @@
     <ClCompile Include="..\..\Source\apps\spkac.c">
       <Filter>源文件\apps</Filter>
     </ClCompile>
-    <ClCompile Include="..\main.cpp">
+    <ClCompile Include="..\..\Source\apps\main.c">
+      <Filter>源文件\apps</Filter>
+    </ClCompile>
+    <ClCompile Include="..\port.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>
