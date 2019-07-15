@@ -228,8 +228,9 @@
     <ClCompile Include="..\port.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\..\Apps\vsprojects\Apps.vcxproj">
+    <ProjectReference Include="..\..\apps\vsprojects\apps.vcxproj">
       <Project>{a5f29e33-523c-4043-b8ac-d3d4259ccb44}</Project>
+      <UseLibraryDependencyInputs>false</UseLibraryDependencyInputs>
     </ProjectReference>
     <ProjectReference Include="..\..\crypto\vsprojects\crypto.vcxproj">
       <Project>{211bde66-7beb-4432-a1fb-7e8432ae0de9}</Project>
