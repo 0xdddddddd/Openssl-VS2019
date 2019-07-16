@@ -2,7 +2,7 @@
 ; Definition file for the DLL version of the libssl-1_1 library from OpenSSL
 ;
 
-LIBRARY OpenSSL
+LIBRARY openssl
 
 EXPORTS
     BIO_f_ssl

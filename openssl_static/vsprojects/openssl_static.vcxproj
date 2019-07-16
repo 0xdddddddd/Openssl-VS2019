@@ -102,7 +102,7 @@
       <PrecompiledHeaderFile>
       </PrecompiledHeaderFile>
       <LanguageStandard>stdcpp17</LanguageStandard>
-      <AdditionalIncludeDirectories>..\..\Source\;..\..\Source\include\;..\..\Source\crypto\ec\curve448\;..\..\Source\crypto\ec\curve448\arch_32\;..\..\Source\crypto\include\;..\..\Source\crypto\modes\;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>..\..\source\;..\..\source\include\;..\..\source\crypto\ec\curve448\;..\..\source\crypto\ec\curve448\arch_32\;..\..\source\crypto\include\;..\..\source\crypto\modes\;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <MultiProcessorCompilation>true</MultiProcessorCompilation>
       <DisableSpecificWarnings>4090;4244;4996</DisableSpecificWarnings>
     </ClCompile>
@@ -128,7 +128,7 @@
       <PrecompiledHeaderFile>
       </PrecompiledHeaderFile>
       <LanguageStandard>stdcpp17</LanguageStandard>
-      <AdditionalIncludeDirectories>..\..\Source\;..\..\Source\include\;..\..\Source\crypto\ec\curve448\;..\..\Source\crypto\ec\curve448\arch_32\;..\..\Source\crypto\include\;..\..\Source\crypto\modes\;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>..\..\source\;..\..\source\include\;..\..\source\crypto\ec\curve448\;..\..\source\crypto\ec\curve448\arch_32\;..\..\source\crypto\include\;..\..\source\crypto\modes\;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <MultiProcessorCompilation>true</MultiProcessorCompilation>
       <DisableSpecificWarnings>4090;4244;4996</DisableSpecificWarnings>
     </ClCompile>
@@ -156,14 +156,15 @@
       <PrecompiledHeaderFile>
       </PrecompiledHeaderFile>
       <LanguageStandard>stdcpp17</LanguageStandard>
-      <AdditionalIncludeDirectories>..\..\Source\;..\..\Source\include\;..\..\Source\crypto\ec\curve448\;..\..\Source\crypto\ec\curve448\arch_32\;..\..\Source\crypto\include\;..\..\Source\crypto\modes\;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>..\..\source\;..\..\source\include\;..\..\source\crypto\ec\curve448\;..\..\source\crypto\ec\curve448\arch_32\;..\..\source\crypto\include\;..\..\source\crypto\modes\;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <MultiProcessorCompilation>true</MultiProcessorCompilation>
       <DisableSpecificWarnings>4090;4244;4996</DisableSpecificWarnings>
       <WholeProgramOptimization>true</WholeProgramOptimization>
       <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
       <OmitFramePointers>
       </OmitFramePointers>
-      <FavorSizeOrSpeed>Size</FavorSizeOrSpeed>
+      <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
+      <ControlFlowGuard>Guard</ControlFlowGuard>
     </ClCompile>
     <Link>
       <SubSystem>Windows</SubSystem>
@@ -191,11 +192,12 @@
       <PrecompiledHeaderFile>
       </PrecompiledHeaderFile>
       <LanguageStandard>stdcpp17</LanguageStandard>
-      <AdditionalIncludeDirectories>..\..\Source\;..\..\Source\include\;..\..\Source\crypto\ec\curve448\;..\..\Source\crypto\ec\curve448\arch_32\;..\..\Source\crypto\include\;..\..\Source\crypto\modes\;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>..\..\source\;..\..\source\include\;..\..\source\crypto\ec\curve448\;..\..\source\crypto\ec\curve448\arch_32\;..\..\source\crypto\include\;..\..\source\crypto\modes\;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <MultiProcessorCompilation>true</MultiProcessorCompilation>
       <DisableSpecificWarnings>4090;4244;4996</DisableSpecificWarnings>
       <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
-      <FavorSizeOrSpeed>Size</FavorSizeOrSpeed>
+      <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
+      <ControlFlowGuard>Guard</ControlFlowGuard>
     </ClCompile>
     <Link>
       <SubSystem>Windows</SubSystem>
@@ -210,50 +212,50 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="..\..\Source\ssl\bio_ssl.c" />
-    <ClCompile Include="..\..\Source\ssl\d1_lib.c" />
-    <ClCompile Include="..\..\Source\ssl\d1_msg.c" />
-    <ClCompile Include="..\..\Source\ssl\d1_srtp.c" />
-    <ClCompile Include="..\..\Source\ssl\methods.c" />
-    <ClCompile Include="..\..\Source\ssl\packet.c" />
-    <ClCompile Include="..\..\Source\ssl\pqueue.c" />
-    <ClCompile Include="..\..\Source\ssl\record\dtls1_bitmap.c" />
-    <ClCompile Include="..\..\Source\ssl\record\rec_layer_d1.c" />
-    <ClCompile Include="..\..\Source\ssl\record\rec_layer_s3.c" />
-    <ClCompile Include="..\..\Source\ssl\record\ssl3_buffer.c" />
-    <ClCompile Include="..\..\Source\ssl\record\ssl3_record.c" />
-    <ClCompile Include="..\..\Source\ssl\record\ssl3_record_tls13.c" />
-    <ClCompile Include="..\..\Source\ssl\s3_cbc.c" />
-    <ClCompile Include="..\..\Source\ssl\s3_enc.c" />
-    <ClCompile Include="..\..\Source\ssl\s3_lib.c" />
-    <ClCompile Include="..\..\Source\ssl\s3_msg.c" />
-    <ClCompile Include="..\..\Source\ssl\ssl_asn1.c" />
-    <ClCompile Include="..\..\Source\ssl\ssl_cert.c" />
-    <ClCompile Include="..\..\Source\ssl\ssl_ciph.c" />
-    <ClCompile Include="..\..\Source\ssl\ssl_conf.c" />
-    <ClCompile Include="..\..\Source\ssl\ssl_err.c" />
-    <ClCompile Include="..\..\Source\ssl\ssl_init.c" />
-    <ClCompile Include="..\..\Source\ssl\ssl_lib.c" />
-    <ClCompile Include="..\..\Source\ssl\ssl_mcnf.c" />
-    <ClCompile Include="..\..\Source\ssl\ssl_rsa.c" />
-    <ClCompile Include="..\..\Source\ssl\ssl_sess.c" />
-    <ClCompile Include="..\..\Source\ssl\ssl_stat.c" />
-    <ClCompile Include="..\..\Source\ssl\ssl_txt.c" />
-    <ClCompile Include="..\..\Source\ssl\ssl_utst.c" />
-    <ClCompile Include="..\..\Source\ssl\statem\extensions.c" />
-    <ClCompile Include="..\..\Source\ssl\statem\extensions_clnt.c" />
-    <ClCompile Include="..\..\Source\ssl\statem\extensions_cust.c" />
-    <ClCompile Include="..\..\Source\ssl\statem\extensions_srvr.c" />
-    <ClCompile Include="..\..\Source\ssl\statem\statem.c" />
-    <ClCompile Include="..\..\Source\ssl\statem\statem_clnt.c" />
-    <ClCompile Include="..\..\Source\ssl\statem\statem_dtls.c" />
-    <ClCompile Include="..\..\Source\ssl\statem\statem_lib.c" />
-    <ClCompile Include="..\..\Source\ssl\statem\statem_srvr.c" />
-    <ClCompile Include="..\..\Source\ssl\t1_enc.c" />
-    <ClCompile Include="..\..\Source\ssl\t1_lib.c" />
-    <ClCompile Include="..\..\Source\ssl\t1_trce.c" />
-    <ClCompile Include="..\..\Source\ssl\tls13_enc.c" />
-    <ClCompile Include="..\..\Source\ssl\tls_srp.c" />
+    <ClCompile Include="..\..\source\ssl\bio_ssl.c" />
+    <ClCompile Include="..\..\source\ssl\d1_lib.c" />
+    <ClCompile Include="..\..\source\ssl\d1_msg.c" />
+    <ClCompile Include="..\..\source\ssl\d1_srtp.c" />
+    <ClCompile Include="..\..\source\ssl\methods.c" />
+    <ClCompile Include="..\..\source\ssl\packet.c" />
+    <ClCompile Include="..\..\source\ssl\pqueue.c" />
+    <ClCompile Include="..\..\source\ssl\record\dtls1_bitmap.c" />
+    <ClCompile Include="..\..\source\ssl\record\rec_layer_d1.c" />
+    <ClCompile Include="..\..\source\ssl\record\rec_layer_s3.c" />
+    <ClCompile Include="..\..\source\ssl\record\ssl3_buffer.c" />
+    <ClCompile Include="..\..\source\ssl\record\ssl3_record.c" />
+    <ClCompile Include="..\..\source\ssl\record\ssl3_record_tls13.c" />
+    <ClCompile Include="..\..\source\ssl\s3_cbc.c" />
+    <ClCompile Include="..\..\source\ssl\s3_enc.c" />
+    <ClCompile Include="..\..\source\ssl\s3_lib.c" />
+    <ClCompile Include="..\..\source\ssl\s3_msg.c" />
+    <ClCompile Include="..\..\source\ssl\ssl_asn1.c" />
+    <ClCompile Include="..\..\source\ssl\ssl_cert.c" />
+    <ClCompile Include="..\..\source\ssl\ssl_ciph.c" />
+    <ClCompile Include="..\..\source\ssl\ssl_conf.c" />
+    <ClCompile Include="..\..\source\ssl\ssl_err.c" />
+    <ClCompile Include="..\..\source\ssl\ssl_init.c" />
+    <ClCompile Include="..\..\source\ssl\ssl_lib.c" />
+    <ClCompile Include="..\..\source\ssl\ssl_mcnf.c" />
+    <ClCompile Include="..\..\source\ssl\ssl_rsa.c" />
+    <ClCompile Include="..\..\source\ssl\ssl_sess.c" />
+    <ClCompile Include="..\..\source\ssl\ssl_stat.c" />
+    <ClCompile Include="..\..\source\ssl\ssl_txt.c" />
+    <ClCompile Include="..\..\source\ssl\ssl_utst.c" />
+    <ClCompile Include="..\..\source\ssl\statem\extensions.c" />
+    <ClCompile Include="..\..\source\ssl\statem\extensions_clnt.c" />
+    <ClCompile Include="..\..\source\ssl\statem\extensions_cust.c" />
+    <ClCompile Include="..\..\source\ssl\statem\extensions_srvr.c" />
+    <ClCompile Include="..\..\source\ssl\statem\statem.c" />
+    <ClCompile Include="..\..\source\ssl\statem\statem_clnt.c" />
+    <ClCompile Include="..\..\source\ssl\statem\statem_dtls.c" />
+    <ClCompile Include="..\..\source\ssl\statem\statem_lib.c" />
+    <ClCompile Include="..\..\source\ssl\statem\statem_srvr.c" />
+    <ClCompile Include="..\..\source\ssl\t1_enc.c" />
+    <ClCompile Include="..\..\source\ssl\t1_lib.c" />
+    <ClCompile Include="..\..\source\ssl\t1_trce.c" />
+    <ClCompile Include="..\..\source\ssl\tls13_enc.c" />
+    <ClCompile Include="..\..\source\ssl\tls_srp.c" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

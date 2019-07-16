@@ -21,136 +21,136 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="..\..\Source\ssl\record\rec_layer_s3.c">
+    <ClCompile Include="..\..\source\ssl\record\rec_layer_s3.c">
       <Filter>源文件\record</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\Source\ssl\record\ssl3_buffer.c">
+    <ClCompile Include="..\..\source\ssl\record\ssl3_buffer.c">
       <Filter>源文件\record</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\Source\ssl\record\ssl3_record.c">
+    <ClCompile Include="..\..\source\ssl\record\ssl3_record.c">
       <Filter>源文件\record</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\Source\ssl\record\ssl3_record_tls13.c">
+    <ClCompile Include="..\..\source\ssl\record\ssl3_record_tls13.c">
       <Filter>源文件\record</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\Source\ssl\record\dtls1_bitmap.c">
+    <ClCompile Include="..\..\source\ssl\record\dtls1_bitmap.c">
       <Filter>源文件\record</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\Source\ssl\record\rec_layer_d1.c">
+    <ClCompile Include="..\..\source\ssl\record\rec_layer_d1.c">
       <Filter>源文件\record</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\Source\ssl\statem\statem_lib.c">
+    <ClCompile Include="..\..\source\ssl\statem\statem_lib.c">
       <Filter>源文件\statem</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\Source\ssl\statem\statem_srvr.c">
+    <ClCompile Include="..\..\source\ssl\statem\statem_srvr.c">
       <Filter>源文件\statem</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\Source\ssl\statem\extensions.c">
+    <ClCompile Include="..\..\source\ssl\statem\extensions.c">
       <Filter>源文件\statem</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\Source\ssl\statem\extensions_clnt.c">
+    <ClCompile Include="..\..\source\ssl\statem\extensions_clnt.c">
       <Filter>源文件\statem</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\Source\ssl\statem\extensions_cust.c">
+    <ClCompile Include="..\..\source\ssl\statem\extensions_cust.c">
       <Filter>源文件\statem</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\Source\ssl\statem\extensions_srvr.c">
+    <ClCompile Include="..\..\source\ssl\statem\extensions_srvr.c">
       <Filter>源文件\statem</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\Source\ssl\statem\statem.c">
+    <ClCompile Include="..\..\source\ssl\statem\statem.c">
       <Filter>源文件\statem</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\Source\ssl\statem\statem_clnt.c">
+    <ClCompile Include="..\..\source\ssl\statem\statem_clnt.c">
       <Filter>源文件\statem</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\Source\ssl\statem\statem_dtls.c">
+    <ClCompile Include="..\..\source\ssl\statem\statem_dtls.c">
       <Filter>源文件\statem</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\Source\ssl\t1_trce.c">
+    <ClCompile Include="..\..\source\ssl\t1_trce.c">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\Source\ssl\tls_srp.c">
+    <ClCompile Include="..\..\source\ssl\tls_srp.c">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\Source\ssl\tls13_enc.c">
+    <ClCompile Include="..\..\source\ssl\tls13_enc.c">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\Source\ssl\bio_ssl.c">
+    <ClCompile Include="..\..\source\ssl\bio_ssl.c">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\Source\ssl\d1_lib.c">
+    <ClCompile Include="..\..\source\ssl\d1_lib.c">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\Source\ssl\d1_msg.c">
+    <ClCompile Include="..\..\source\ssl\d1_msg.c">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\Source\ssl\d1_srtp.c">
+    <ClCompile Include="..\..\source\ssl\d1_srtp.c">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\Source\ssl\methods.c">
+    <ClCompile Include="..\..\source\ssl\methods.c">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\Source\ssl\packet.c">
+    <ClCompile Include="..\..\source\ssl\packet.c">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\Source\ssl\pqueue.c">
+    <ClCompile Include="..\..\source\ssl\pqueue.c">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\Source\ssl\s3_cbc.c">
+    <ClCompile Include="..\..\source\ssl\s3_cbc.c">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\Source\ssl\s3_enc.c">
+    <ClCompile Include="..\..\source\ssl\s3_enc.c">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\Source\ssl\s3_lib.c">
+    <ClCompile Include="..\..\source\ssl\s3_lib.c">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\Source\ssl\s3_msg.c">
+    <ClCompile Include="..\..\source\ssl\s3_msg.c">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\Source\ssl\ssl_asn1.c">
+    <ClCompile Include="..\..\source\ssl\ssl_asn1.c">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\Source\ssl\ssl_cert.c">
+    <ClCompile Include="..\..\source\ssl\ssl_cert.c">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\Source\ssl\ssl_ciph.c">
+    <ClCompile Include="..\..\source\ssl\ssl_ciph.c">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\Source\ssl\ssl_conf.c">
+    <ClCompile Include="..\..\source\ssl\ssl_conf.c">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\Source\ssl\ssl_err.c">
+    <ClCompile Include="..\..\source\ssl\ssl_err.c">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\Source\ssl\ssl_init.c">
+    <ClCompile Include="..\..\source\ssl\ssl_init.c">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\Source\ssl\ssl_lib.c">
+    <ClCompile Include="..\..\source\ssl\ssl_lib.c">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\Source\ssl\ssl_mcnf.c">
+    <ClCompile Include="..\..\source\ssl\ssl_mcnf.c">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\Source\ssl\ssl_rsa.c">
+    <ClCompile Include="..\..\source\ssl\ssl_rsa.c">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\Source\ssl\ssl_sess.c">
+    <ClCompile Include="..\..\source\ssl\ssl_sess.c">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\Source\ssl\ssl_stat.c">
+    <ClCompile Include="..\..\source\ssl\ssl_stat.c">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\Source\ssl\ssl_txt.c">
+    <ClCompile Include="..\..\source\ssl\ssl_txt.c">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\Source\ssl\ssl_utst.c">
+    <ClCompile Include="..\..\source\ssl\ssl_utst.c">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\Source\ssl\t1_enc.c">
+    <ClCompile Include="..\..\source\ssl\t1_enc.c">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\Source\ssl\t1_lib.c">
+    <ClCompile Include="..\..\source\ssl\t1_lib.c">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>

@@ -2,7 +2,7 @@
 ; Definition file for the DLL version of the libcrypto-1_1 library from OpenSSL
 ;
 
-LIBRARY Crypto
+LIBRARY crypto
 
 EXPORTS
     ACCESS_DESCRIPTION_free
