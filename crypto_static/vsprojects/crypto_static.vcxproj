@@ -736,7 +736,7 @@
     <ConfigurationType>StaticLibrary</ConfigurationType>
     <UseDebugLibraries>false</UseDebugLibraries>
     <PlatformToolset>v142</PlatformToolset>
-    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <WholeProgramOptimization>false</WholeProgramOptimization>
     <CharacterSet>Unicode</CharacterSet>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
@@ -773,23 +773,23 @@
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <LinkIncremental>true</LinkIncremental>
-    <OutDir>$(SolutionDir)Bin\$(Configuration)\$(PlatformShortName)\</OutDir>
-    <IntDir>$(SolutionDir)Bin\$(Configuration)\$(PlatformShortName)\Obj\$(ProjectName)\</IntDir>
+    <OutDir>$(SolutionDir)Lib\$(Configuration)\$(PlatformShortName)\</OutDir>
+    <IntDir>$(SolutionDir)Lib\$(Configuration)\$(PlatformShortName)\Obj\$(ProjectName)\</IntDir>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <LinkIncremental>true</LinkIncremental>
-    <OutDir>$(SolutionDir)Bin\$(Configuration)\$(PlatformShortName)\</OutDir>
-    <IntDir>$(SolutionDir)Bin\$(Configuration)\$(PlatformShortName)\Obj\$(ProjectName)\</IntDir>
+    <OutDir>$(SolutionDir)Lib\$(Configuration)\$(PlatformShortName)\</OutDir>
+    <IntDir>$(SolutionDir)Lib\$(Configuration)\$(PlatformShortName)\Obj\$(ProjectName)\</IntDir>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <LinkIncremental>false</LinkIncremental>
-    <IntDir>$(SolutionDir)Bin\$(Configuration)\$(PlatformShortName)\Obj\$(ProjectName)\</IntDir>
-    <OutDir>$(SolutionDir)Bin\$(Configuration)\$(PlatformShortName)\</OutDir>
+    <IntDir>$(SolutionDir)Lib\$(Configuration)\$(PlatformShortName)\Obj\$(ProjectName)\</IntDir>
+    <OutDir>$(SolutionDir)Lib\$(Configuration)\$(PlatformShortName)\</OutDir>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <LinkIncremental>false</LinkIncremental>
-    <OutDir>$(SolutionDir)Bin\$(Configuration)\$(PlatformShortName)\</OutDir>
-    <IntDir>$(SolutionDir)Bin\$(Configuration)\$(PlatformShortName)\Obj\$(ProjectName)\</IntDir>
+    <OutDir>$(SolutionDir)Lib\$(Configuration)\$(PlatformShortName)\</OutDir>
+    <IntDir>$(SolutionDir)Lib\$(Configuration)\$(PlatformShortName)\Obj\$(ProjectName)\</IntDir>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>
@@ -798,7 +798,7 @@
       <WarningLevel>Level3</WarningLevel>
       <Optimization>Disabled</Optimization>
       <SDLCheck>true</SDLCheck>
-      <PreprocessorDefinitions>WIN32;_DEBUG;_LIB;WIN32_LEAN_AND_MEAN;OPENSSL_SYS_WIN32;OPENSSL_USE_APPLINK;OPENSSL_THREADS;OPENSSL_NO_STATIC_ENGINE;OPENSSLDIR=".\\Openssl\\";ENGINESDIR=".\\Openssl\\Engines\\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_LIB;WIN32_LEAN_AND_MEAN;OPENSSL_SYS_WIN32;OPENSSL_USE_APPLINK;OPENSSL_THREADS;OPENSSL_NO_STATIC_ENGINE;OPENSSL_NO_ERR;OPENSSL_NO_FILENAMES;OPENSSLDIR=".\\Openssl\\";ENGINESDIR=".\\Openssl\\Engines\\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
       <PrecompiledHeaderFile>
       </PrecompiledHeaderFile>
@@ -806,6 +806,7 @@
       <LanguageStandard>stdcpp17</LanguageStandard>
       <AdditionalIncludeDirectories>..\..\source\;..\..\source\include\;..\..\source\crypto\ec\curve448\;..\..\source\crypto\ec\curve448\arch_32\;..\..\source\crypto\include\;..\..\source\crypto\modes\;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <DisableSpecificWarnings>4090;4244;4996</DisableSpecificWarnings>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
     </ClCompile>
     <Link>
       <SubSystem>Windows</SubSystem>
@@ -819,7 +820,7 @@
       <WarningLevel>Level3</WarningLevel>
       <Optimization>Disabled</Optimization>
       <SDLCheck>true</SDLCheck>
-      <PreprocessorDefinitions>WIN64;_DEBUG;_LIB;WIN32_LEAN_AND_MEAN;OPENSSL_SYS_WIN64;OPENSSL_USE_APPLINK;OPENSSL_THREADS;OPENSSL_NO_STATIC_ENGINE;OPENSSLDIR=".\\Openssl\\";ENGINESDIR=".\\Openssl\\Engines\\";L_ENDIAN;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>WIN64;_DEBUG;_LIB;WIN32_LEAN_AND_MEAN;OPENSSL_SYS_WIN64;OPENSSL_USE_APPLINK;OPENSSL_THREADS;OPENSSL_NO_STATIC_ENGINE;OPENSSL_NO_ERR;OPENSSL_NO_FILENAMES;L_ENDIAN;OPENSSLDIR=".\\Openssl\\";ENGINESDIR=".\\Openssl\\Engines\\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
       <PrecompiledHeaderFile>
       </PrecompiledHeaderFile>
@@ -844,10 +845,11 @@
       </PrecompiledHeader>
       <WarningLevel>Level3</WarningLevel>
       <Optimization>MaxSpeed</Optimization>
-      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <FunctionLevelLinking>
+      </FunctionLevelLinking>
       <IntrinsicFunctions>false</IntrinsicFunctions>
       <SDLCheck>true</SDLCheck>
-      <PreprocessorDefinitions>WIN32;NDEBUG;_LIB;WIN32_LEAN_AND_MEAN;OPENSSL_USE_APPLINK;OPENSSL_THREADS;OPENSSL_NO_STATIC_ENGINE;OPENSSL_SYS_WIN32;OPENSSLDIR=".\\Openssl\\";ENGINESDIR=".\\Openssl\\Engines\\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_LIB;WIN32_LEAN_AND_MEAN;OPENSSL_USE_APPLINK;OPENSSL_THREADS;OPENSSL_NO_STATIC_ENGINE;OPENSSL_SYS_WIN32;OPENSSL_NO_ERR;OPENSSL_NO_FILENAMES;OPENSSLDIR=".\\Openssl\\";ENGINESDIR=".\\Openssl\\Engines\\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
       <PrecompiledHeaderFile>
       </PrecompiledHeaderFile>
@@ -856,11 +858,12 @@
       <AdditionalIncludeDirectories>..\..\source\;..\..\source\include\;..\..\source\crypto\ec\curve448\;..\..\source\crypto\ec\curve448\arch_32\;..\..\source\crypto\include\;..\..\source\crypto\modes\;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <DisableSpecificWarnings>4090;4244;4996</DisableSpecificWarnings>
       <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
-      <WholeProgramOptimization>true</WholeProgramOptimization>
-      <OmitFramePointers>
-      </OmitFramePointers>
+      <WholeProgramOptimization>false</WholeProgramOptimization>
+      <OmitFramePointers>true</OmitFramePointers>
       <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
-      <ControlFlowGuard>Guard</ControlFlowGuard>
+      <ControlFlowGuard>
+      </ControlFlowGuard>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
     </ClCompile>
     <Link>
       <SubSystem>Windows</SubSystem>
@@ -878,7 +881,7 @@
       <FunctionLevelLinking>true</FunctionLevelLinking>
       <IntrinsicFunctions>false</IntrinsicFunctions>
       <SDLCheck>true</SDLCheck>
-      <PreprocessorDefinitions>WIN64;NDEBUG;_LIB;WIN32_LEAN_AND_MEAN;OPENSSL_USE_APPLINK;OPENSSL_THREADS;OPENSSL_NO_STATIC_ENGINE;OPENSSL_SYS_WIN32;OPENSSLDIR=".\\Openssl\\";ENGINESDIR=".\\Openssl\\Engines\\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>WIN64;NDEBUG;_LIB;WIN32_LEAN_AND_MEAN;OPENSSL_USE_APPLINK;OPENSSL_THREADS;OPENSSL_NO_STATIC_ENGINE;OPENSSL_SYS_WIN32;OPENSSL_NO_ERR;OPENSSL_NO_FILENAMES;OPENSSLDIR=".\\Openssl\\";ENGINESDIR=".\\Openssl\\Engines\\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
       <PrecompiledHeaderFile>
       </PrecompiledHeaderFile>

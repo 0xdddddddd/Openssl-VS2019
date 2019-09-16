@@ -693,15 +693,15 @@ void err_delete_thread_state(void)
 }
 
 #if OPENSSL_API_COMPAT < 0x10100000L
-void ERR_remove_thread_state(void *dummy)
-{
-}
+// void ERR_remove_thread_state(void *dummy)
+// {
+// }
 #endif
 
 #if OPENSSL_API_COMPAT < 0x10000000L
-void ERR_remove_state(unsigned long pid)
-{
-}
+// void ERR_remove_state(unsigned long pid)
+// {
+// }
 #endif
 
 DEFINE_RUN_ONCE_STATIC(err_do_init)
